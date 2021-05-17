@@ -2,13 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 
-import Router from 'next/router'
-import NProgress from 'nprogress'
 import SocialMedia from '../components/SocialMedia'
-
-Router.events.on('routeChangeStart', () => NProgress.start())
-Router.events.on('routeChangeComplete', () => NProgress.done())
-Router.events.on('routeChangeError', () => NProgress.done())
 
 export default function Home() {
 
@@ -17,7 +11,6 @@ export default function Home() {
       <Head>
         <title>Treble.bg</title>
         <link rel='icon' href='/favicon.ico' />
-        <script src='https://use.fontawesome.com/856f95c207.js' />
         <link rel='preconnect' href='https://fonts.gstatic.com' />
         <link
           href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap'
