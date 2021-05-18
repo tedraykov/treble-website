@@ -148,9 +148,7 @@
 .socialMedia {
     z-index: 100;
     position: absolute;
-    right: 0;
     bottom: 0;
-    margin: 0 10%;
 }
 
 @media (min-width: 600px) {
@@ -167,6 +165,11 @@
     .main figure {
         right: 0;
         left: auto;
+    }
+
+    .socialMedia {
+        margin: 0 10%;
+        right: 0;
     }
 }
 
